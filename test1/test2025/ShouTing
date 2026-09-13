@@ -278,8 +278,11 @@ rules:
   - DOMAIN-SUFFIX,168.sryze.cc,⚡️ 腾讯HK1-自动测速                             # IPTV直播频道
   - DOMAIN-SUFFIX,php.jdshipin.com,⚡️ 腾讯HK1-自动测速                         # IPTV直播频道
 
-  - AND,((PROCESS-NAME,com.fongmi.android.tv),(GEOIP,cn)),🎯 国内-手动-联通手厅                     # OK影视 (GEOIP_CN)
-  - AND,((PROCESS-NAME,com.fongmi.android.tv),(NOT,((GEOIP,cn)))),🌏 国外-手动-联通手厅             # OK影视 (GEOIP_非CN)
+  - AND,((PROCESS-NAME,com.fongmi.android.tv),(GEOIP,cn)),🎯 国内-手动-联通手厅                     # 影视 (GEOIP_CN)
+  - AND,((PROCESS-NAME,com.fongmi.android.tv),(NOT,((GEOIP,cn)))),🌏 国外-手动-联通手厅             # 影视 (GEOIP_非CN)
+
+  - AND,((PROCESS-NAME,com.fongmi.android.oktv),(GEOIP,cn)),🎯 国内-手动-联通手厅                   # OK影视 (GEOIP_CN)
+  - AND,((PROCESS-NAME,com.fongmi.android.oktv),(NOT,((GEOIP,cn)))),🌏 国外-手动-联通手厅           # OK影视 (GEOIP_非CN)
 
   - AND,((PROCESS-NAME,com.github.mytv.android),(GEOIP,cn)),🎯 国内-手动-联通手厅                   # 电视直播 (GEOIP_CN)
   - AND,((PROCESS-NAME,com.github.mytv.android),(NOT,((GEOIP,cn)))),🌏 国外-手动-联通手厅           # 电视直播 (GEOIP_非CN)
