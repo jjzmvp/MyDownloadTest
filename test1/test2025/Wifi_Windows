@@ -85,7 +85,7 @@ ntp:
 tun:
   enable: true
   device: MetaTun-Windows
-  stack: mixed                   # system / gvisor / mixed / lwip
+  stack: mips                    # system/ gvisor/ mixed/ mips
   dns-hijack:
     - any:53
     - tcp://any:53
