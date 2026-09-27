@@ -176,6 +176,19 @@ proxy-providers:
       interval: 3600
       lazy: false
       url: *test_url1
+
+    # 头条系
+  📡 Nodes_22003_toutiao:
+    url: https://raw.githubusercontent.com/jjzmvp/MyDictionaryText/refs/heads/ma1n/test2026/share/sub/22003_toutiao
+    type: "http"
+    path: "./ProxyProviders/Nodes_22003_toutiao.yaml"
+    proxy: ⚡️ 腾讯HK1-自动测速
+    interval: 0
+    health-check:
+      enable: true
+      interval: 3600
+      lazy: false
+      url: *test_url1
 # End - 机场相关配置
 
 # 节点配置
@@ -189,6 +202,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_CN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22003_toutiao
       - ✈️ Airport_quick
 
   - name: "🌏 国外-手动-WIFI"
@@ -204,6 +218,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_GN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22003_toutiao
       - ✈️ Airport_shen7
       - ✈️ Airport_quick
 
@@ -243,6 +258,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_GN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22003_toutiao
 
   - name: "⚡️ 腾讯成都-自动测速"
     type: url-test
@@ -253,6 +269,7 @@ proxy-groups:
     filter: "腾讯成都"
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22003_toutiao
 
   - name: "⚡️ 腾讯HK1-自动测速"
     type: url-test
@@ -263,6 +280,7 @@ proxy-groups:
     filter: "腾讯HK1"
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22003_toutiao
 
 # 分流规则
 rules:
