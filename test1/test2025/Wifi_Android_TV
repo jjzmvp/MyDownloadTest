@@ -165,6 +165,7 @@ proxy-providers:
       lazy: false
       url: *test_url1
 
+  # 联通手厅
   📡 Nodes_22001_shouting:
     url: https://raw.githubusercontent.com/jjzmvp/MyDictionaryText/refs/heads/ma1n/test2026/share/sub/22001_shouting
     type: "http"
@@ -177,7 +178,7 @@ proxy-providers:
       lazy: false
       url: *test_url1
 
-    # 头条系
+  # 头条系
   📡 Nodes_22003_toutiao:
     url: https://raw.githubusercontent.com/jjzmvp/MyDictionaryText/refs/heads/ma1n/test2026/share/sub/22003_toutiao
     type: "http"
