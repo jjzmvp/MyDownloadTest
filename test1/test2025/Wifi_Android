@@ -203,6 +203,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_CN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22003_toutiao
       - ✈️ Airport_quick
 
   - name: "🌏 国外-手动-WIFI"
@@ -218,6 +219,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_GN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22003_toutiao
       - ✈️ Airport_shen7
       - ✈️ Airport_quick
 
