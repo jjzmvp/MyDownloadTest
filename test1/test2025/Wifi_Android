@@ -203,6 +203,19 @@ proxy-providers:
       interval: 3600
       lazy: false
       url: *test_url1
+
+  # 哔哩系
+  📡 Nodes_22004_bilibili:
+    url: https://raw.githubusercontent.com/jjzmvp/MyDictionaryText/refs/heads/ma1n/test2026/share/sub/22004_bili
+    type: "http"
+    path: "./ProxyProviders/Nodes_22004_bili.yaml"
+    proxy: ⚡️ 腾讯HK1-自动测速
+    interval: 0
+    health-check:
+      enable: true
+      interval: 3600
+      lazy: false
+      url: *test_url1
 # End - 机场相关配置
 
 # 节点配置
@@ -218,6 +231,7 @@ proxy-groups:
       - 📡 Nodes_22001_shouting
       - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
+      - 📡 Nodes_22004_bilibili
       - ✈️ Airport_quick
 
   - name: "🌏 国外-手动-WIFI"
@@ -235,6 +249,7 @@ proxy-groups:
       - 📡 Nodes_22001_shouting
       - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
+      - 📡 Nodes_22004_bilibili
       - ✈️ Airport_shen7
       - ✈️ Airport_quick
 
@@ -276,6 +291,7 @@ proxy-groups:
       - 📡 Nodes_22001_shouting
       - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
+      - 📡 Nodes_22004_bilibili
 
   - name: "⚡️ 腾讯成都-自动测速"
     type: url-test
@@ -288,6 +304,7 @@ proxy-groups:
       - 📡 Nodes_22001_shouting
       - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
+      - 📡 Nodes_22004_bilibili
 
   - name: "⚡️ 腾讯HK1-自动测速"
     type: url-test
@@ -300,6 +317,7 @@ proxy-groups:
       - 📡 Nodes_22001_shouting
       - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
+      - 📡 Nodes_22004_bilibili
 
 # 分流规则
 rules:
