@@ -178,6 +178,19 @@ proxy-providers:
       lazy: false
       url: *test_url1
 
+  # 腾讯系
+  📡 Nodes_22002_tencent:
+    url: https://raw.githubusercontent.com/jjzmvp/MyDictionaryText/refs/heads/ma1n/test2026/share/sub/22002_tencent
+    type: "http"
+    path: "./ProxyProviders/Nodes_22002_tencent.yaml"
+    proxy: ⚡️ 腾讯HK1-自动测速
+    interval: 0
+    health-check:
+      enable: true
+      interval: 3600
+      lazy: false
+      url: *test_url1
+
   # 头条系
   📡 Nodes_22003_toutiao:
     url: https://raw.githubusercontent.com/jjzmvp/MyDictionaryText/refs/heads/ma1n/test2026/share/sub/22003_toutiao
@@ -203,6 +216,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_CN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
       - ✈️ Airport_quick
 
@@ -219,6 +233,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_GN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
       - ✈️ Airport_shen7
       - ✈️ Airport_quick
@@ -259,6 +274,7 @@ proxy-groups:
     exclude-filter: *excludeNodes_GN
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
 
   - name: "⚡️ 腾讯成都-自动测速"
@@ -270,6 +286,7 @@ proxy-groups:
     filter: "腾讯成都-"
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
 
   - name: "⚡️ 腾讯HK1-自动测速"
@@ -281,6 +298,7 @@ proxy-groups:
     filter: "腾讯HK1-"
     use:
       - 📡 Nodes_22001_shouting
+      - 📡 Nodes_22002_tencent
       - 📡 Nodes_22003_toutiao
 
 # 分流规则
