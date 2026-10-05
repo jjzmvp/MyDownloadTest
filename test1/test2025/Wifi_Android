@@ -24,12 +24,13 @@ ipv6: false                      # 开启IPv6总开关
 udp: true                        # 开启udp
 tcp-concurrent: false            # TCP并发连接所有IP, true:将使用最快握手的TCP
 
-geodata-mode: true               # 使用dat格式的geo文件
-geodata-loader: memconservative  # Geo文件加载模式，standard/memconservative, memconservative模式专为内存受限 (小内存) 设备优化的加载器 (默认值)
-geox-url:                        #自定义 geox-url
-  geoip:   "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb:    "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+geodata-loader: standard         # Geo文件加载模式，standard/memconservative, memconservative模式专为内存受限 (小内存) 设备优化的加载器 (默认值)
+geodata-mode: false
+geox-url:
+  mmdb: "https://github.com/appshubcc/bett-rules/releases/download/latest/geoip.metadb"
+  geoip: "https://github.com/appshubcc/bett-rules/releases/download/latest/geoip.dat"
+  geosite: "https://github.com/appshubcc/bett-rules/releases/download/latest/geosite.dat"
+  asn: "https://github.com/appshubcc/bett-rules/releases/download/latest/GeoLite2-ASN.mmdb"
 
 profile:
   store-selected: true           # 储存 API 对策略组的选择，以供下次启动时使用
