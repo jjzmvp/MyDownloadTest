@@ -421,6 +421,7 @@ rules:
   - GEOSITE,baidu,🎯 国内-手动-联通沃派
   - GEOSITE,youku,🎯 国内-手动-联通沃派
   - GEOSITE,tencent,🎯 国内-手动-联通沃派
+  - GEOSITE,deepseek,🎯 国内-手动-联通沃派
   - GEOSITE,bytedance,🎯 国内-手动-联通沃派
   - GEOSITE,jd,DIRECT
   - GEOSITE,zhihu,DIRECT
