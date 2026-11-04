@@ -328,6 +328,7 @@ rules:
   - GEOSITE,youku,🎯 国内-手动-联通手厅
   - GEOSITE,tencent,🎯 国内-手动-联通手厅
   - GEOSITE,bilibili,🎯 国内-手动-联通手厅
+  - GEOSITE,deepseek,🎯 国内-手动-联通手厅
   - GEOSITE,bytedance,🎯 国内-手动-联通手厅
   - GEOSITE,jd,⚡️ 腾讯成都-自动测速
   - GEOSITE,zhihu,⚡️ 腾讯成都-自动测速
