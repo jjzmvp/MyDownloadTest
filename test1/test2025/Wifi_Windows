@@ -138,7 +138,7 @@ rule-providers:
     proxy: ⚡️ 腾讯HK1-自动测速
     format: mrs
     path: "./RuleProviders/fakeip-filter.mrs"
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
+    url: "https://github.com/appshubcc/bett-rules/releases/download/latest/fakeip-filter.mrs"
 
 # Start- 机场相关配置(关键词：Airport)
 proxy-providers:
